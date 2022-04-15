@@ -1,0 +1,45 @@
+.menu{
+display: none;
+@media(max-width:989px){
+    position: absolute;
+    background: #0C0B08;
+    // background: #bdc3c7;  /* fallback for old browsers */
+    // background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding: 3rem;
+    top: 80px;
+    right:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;   
+    &__links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        gap:30px;   
+        &-link{
+            color: #DCCA87;
+            font-size: 20px;
+            line-height: 175%;
+            font-family: 'Cormorant Upright', serif;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0.04em;
+            transition: all .4s ease;
+            &:hover{
+                color: #ccc;
+                transform: scale(1.2);
+            }
+        }
+   
+    }
+    
+}
+
+
+}

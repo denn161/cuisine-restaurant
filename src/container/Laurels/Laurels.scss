@@ -1,0 +1,109 @@
+.section{
+
+
+    &__laurels{
+        padding: 55px 0 128px 63px;
+        @media(max-width:785px){
+            padding-left: 0px;
+            padding-bottom: 55px;
+        }
+     
+        &-img{
+            max-width: 146px;
+            width: 100%;
+            @media(max-width:1340px){
+               margin:0 auto 60px ;
+               
+            }
+
+            @media(max-width:415px){
+                margin: 60px auto;
+            }
+        }
+
+        .laurels{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media(max-width:876px){
+                flex-direction: column;
+                gap: 50px;
+                align-items: center;
+               
+            }
+
+            &__title{
+                margin-bottom: 64px;
+            }
+
+            &__item{
+                flex: 0 1 50%;
+                @media(max-width:876px){
+                    flex: 0 1 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }                
+                
+                &-img{
+                    max-width:555px ;
+                }
+
+                &-list{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+                    row-gap: 64px;
+                    column-gap: 32px;
+
+                }
+            }
+
+            &__list{              
+              
+                &-item{
+                display: flex;
+                align-items: center;
+                gap: 32px;
+   
+                }
+
+                &-img{
+                 max-width: 79px;
+
+                }
+
+                &-content{
+                    display: flex;
+                    flex-direction: column;
+
+                }
+
+                &-title{
+                    font-family: 'Cormorant Upright';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 23px;
+                    line-height: 130%;
+                    letter-spacing: 0.04em;
+                    text-transform: capitalize;
+                    font-feature-settings: 'tnum' on, 'lnum' on;
+                    color: #DCCA87;
+                    margin-bottom: 8px;
+
+
+                }
+
+                &-subtitle{
+                    font-family: 'Open Sans';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 175%;
+                    letter-spacing: 0.04em;
+                    color: #AAAAAA;
+                }
+            }
+        }
+    }
+}
+

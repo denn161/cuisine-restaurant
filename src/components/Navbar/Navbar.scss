@@ -1,0 +1,112 @@
+.navbar{
+ color: #fff;
+ display: flex;
+ justify-content: space-between;
+ padding: 1rem 2rem;
+ align-items: center;
+ width: 100%;
+ 
+ &__menu{
+     display: none;
+     width: fit-content;
+     @media(max-width:989px){
+         display: block;
+     }
+ }
+
+ &__logo{
+     max-width: 199px;
+     height: 57px;
+     width: 100%; 
+     @media(max-width:1067px){
+       max-width: 133px;
+    }
+    
+ }
+ .nav{
+     display: flex;
+     gap: 271px;
+     align-items: center;
+     @media(max-width:1276px){
+         gap:50px;
+
+     }
+  @media(max-width:989px){
+      display: none;
+
+    
+  }   
+
+ }
+
+ &__links{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex: 1;
+     gap: 32px;
+     list-style: none;   
+         &-link{
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 175%;
+            letter-spacing: 0.04em;
+            color: #FFFFFF;
+            transition: all .4s ease;
+            position: relative;
+            &::after{
+                content: '';
+                display: block;
+                position: absolute;
+                bottom: 0;
+                width: 0;
+                height: 1px;
+                background: var(--color-white);      
+                transition: width .4s ease;          
+            }
+            &:hover{
+             color: #ccc;
+            }
+            &:hover::after{
+                width: 100%;
+
+            }           
+           
+         }     
+ }
+
+ &__btns{
+     display: flex;
+     align-items: center;
+
+     &-auth{
+         display: flex;
+         padding-right: 50px;   
+      
+         
+        
+     }
+
+     &-link{
+        font-family:var(--font-alt);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 175%;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        color: #fff;
+
+     }
+
+     &-book{
+         padding-left: 50px;
+     }
+
+ }
+
+
+
+}

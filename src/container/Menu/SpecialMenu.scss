@@ -1,0 +1,128 @@
+.section__menu{
+    padding: 127px 0;
+    color: #fff;
+    @media(max-width:1313px){
+        padding: 50px 0;
+    } 
+
+    .special__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .spoon{
+     max-width: 40px;
+     width: 100%;
+     margin: 0 auto;
+       
+    }
+
+    .specialmenu__title{
+        margin-bottom: 64px;
+    }
+
+    .special__menu{
+     display: flex;
+     justify-content: center;
+     gap: 32px;
+     margin-bottom: 73px;
+     @media(max-width:1179px){
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+        align-items: center;
+    } 
+
+     &-title{
+        font-family: 'Cormorant Upright';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        font-feature-settings: 'tnum' on, 'lnum' on;       
+        color: #FFFFFF;
+        margin-bottom: 48px;
+     }
+   
+     
+
+     &-img{
+         max-width: 444px;
+     }
+        &-item{
+         flex: 0 1 444px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 42px;
+         @media(max-width:1025px){
+             align-self: flex-start;
+             &:last-child{
+                 align-self: flex-end;
+             }
+         }
+
+         .special__position{
+            display:flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;   
+            gap: 8px;
+
+            span{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 175%;
+                letter-spacing: 0.04em;
+                color: #AAAAAA;
+            }
+            
+            &-info{
+                width: 100%;
+                display: flex;
+                gap: 32px;
+                align-items: center;
+            }
+
+            &-name{
+                display: flex;               
+                flex-direction: column;
+                align-items: flex-start; 
+                max-width: 192px;
+                width: 100%;
+                font-family: 'Cormorant Upright';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 23px;
+                line-height: 130%;
+                letter-spacing: 0.04em;
+                text-transform: capitalize;
+                font-feature-settings: 'tnum' on, 'lnum' on;
+                color: #DCCA87;             
+            }
+
+            &-border{
+              width: 119px;            
+              height: 1px;
+              background: #FAFAFA;
+
+            }
+          
+         }
+
+        }
+
+    }
+    
+
+
+
+
+
+
+}

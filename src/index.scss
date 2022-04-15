@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+     
+:root {
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;  
+  --color-golden: #DCCA87;
+  --color-black: #0C0C0C;
+  --color-gray: #545454;
+  --color-crimson: #F5EFDB;
+  --color-grey: #AAAAAA;
+  --color-white: #FFFFFF;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  
+}
+
+ul,li,h1,h1,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+    background: #0C0B08;
+   font-family: var(--font-base);
+   
+}
+
+.container{
+  max-width: 1330px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a{
+  color: unset;
+  display: block;  
+  text-decoration: none;
+}
+
+img{
+  width: 100%;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+// 2аза
+
+
+.title{
+  font-family: 'Cormorant Upright';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize; 
+  color: #DCCA87;
+  
+}
+
+.section__title{
+  font-family: 'Cormorant Upright';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #DCCA87; 
+
+  @media(max-width:415px){
+    font-size: 42px;
+  }
+}
+
+.flex__center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__bg {
+  background: url('./assets/bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.btn{
+  background: #DCCA87;
+  padding: 8px 32px;
+  font-family: 'Cormorant Upright',serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #0C0B08;
+  cursor: pointer;
+  display: block;
+  @media(max-width:415px){
+    width: 70%;
+    text-align: center;
+  }
+}
+
+.text{
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 175%;
+text-align: left;
+letter-spacing: 0.04em;
+color: #AAAAAA;
+
+} 
+
+.footer__bottom-title{
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #F5EFDB;
+    margin-bottom: 24px;
+
+}
+
+.text__center{
+  text-align: center;
+}
+
+.subheading__title{
+    font-family: 'Cormorant Upright';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 130%;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+ @-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.section__margin{
+  @media(max-width:414px){
+    margin-top: 50px;
+  }
+}
